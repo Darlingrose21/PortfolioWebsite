@@ -1,0 +1,74 @@
+html {
+    --primary: rgba(255, 255, 255, 1);
+    --secundary: rgb(37, 76, 125);
+    --acccent: rgb(76, 129, 158);
+    --neutral: rgba(238, 238, 238, 1);
+
+    font-family: 'Slabo 27px', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(Oceanbkgr.jpg);
+    background-size: cover;
+
+}
+.title {
+    font-size: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: var(--primary);
+}
+
+.beschrijving {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+
+/*navigationbar*/
+header {
+    background: #FFFF;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+    overflow: hidden;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+   float: left;
+   border-right: 1px solid var(--secundary);
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 48px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--acccent);
+}
+
+.active {
+    background-color: var(--acccent);
+}
+
+
